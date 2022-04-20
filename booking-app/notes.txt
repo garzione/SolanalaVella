@@ -1,0 +1,51 @@
+go mod init <project name>
+
+must add package <main> in main file
+
+*Go is statically typed, but Go can infer the type when
+*the variable is initialized and immediately assigned
+
+& is pointer and assigns memory location for input ie if used
+with fmt.Scan
+
+arrays in go have fixed size
+
+only for loops with different types
+
+_ blank identifier
+
+you can return multiple values!
+
+package-level variables: 
+    *require->  "var <name> = <value>" syntax
+
+split code into multiple Go packages
+
+go run . 
+    - to run multiple files that belong to the same package
+
+go.mod has module name which is used to import custom packages
+
+booking-app/helper
+
+to export a function or variable : Capitalize the first letter of the function name
+
+map === dictionary
+
+we cannot have mixed datatype for map key/values
+    -UNLESS we used structs!
+
+go keyword for concurrency
+    -application can exit before others are done
+    -the main thread can determinate all ancillary ones
+        -fince by using var wg = sync.WaitGroup{} -> wg.Add(1 <number of threads> ) , wg.Wait(), wg.Done() *also builtin close() function if using channels
+
+go -> Green Thread -> Go Routines instead of operating system threads
+
+"channels" bridge goroutines 
+    -strongly typed
+    <- syntax
+
+signal only channel is: var doneCh = make(chan struct{})  *this is a memoryless signal message
+
+select x cases 
