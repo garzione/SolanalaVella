@@ -1,13 +1,16 @@
-body {
-    width: 256px;
-    margin: 12px 24px 16px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #7f8c8d;
-    -webkit-font-smoothing: anti-aliased;
-}
 .title {
-    font-size: 24px;
-    color: #2c3e50;
+    font-size: 56px;
+    color: black;
+    font-family: 'Grand Hotel', cursive;
+    margin-bottom:0px;
+    margin-top:15px;
+    margin-bottom: 10px;
+    text-align:center
+}
+.centerreach {
+    text-align: center;
+    align-content: center;
+    margin-bottom:20px;
 }
 .buttons {
     display: flex;
@@ -108,4 +111,83 @@ button {
         box-sizing: border-box;
         resize: none;
     }
+}
+
+$color_1: #fff;
+$color_2: #14F195;
+$background-color_1: black;
+
+.col1 {
+    color:$color_1;
+}
+
+.col2 {
+    color:$color_2;
+}
+
+.tooltip {
+    // margin-top: 5px !important;
+    // color:black !important;
+	// cursor: pointer;
+	.tooltiptext {
+		visibility: hidden !important;
+		width: 120px !important;
+		background-color: $background-color_1 !important;
+		text-align: center !important;
+		border-radius: 6px !important;
+		padding: 5px 0 !important;
+		position: absolute !important;
+		z-index: 100 !important;
+		top: 100% !important;
+		left: 50% !important;
+		margin-left: -60px !important;
+	}
+	&:hover {
+		.tooltiptext {
+			visibility: visible !important;
+		}
+	}
+}
+
+.outer {
+    height: 400px;
+    width: 325px;
+    background-image: url('../images/bgpic.png');
+    background-size:     cover; 
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    z-index: -1;
+}
+
+.navPos {
+    position: fixed !important;
+    margin-bottom: 0px !important;
+}
+
+.fq {
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+.iconUp {
+    font-size: 26px;
+}
+
+#hoverText {
+    cursor: pointer;
+    margin-top:5px;
+    &:hover {
+        #toolT {
+            visibility: visible !important;
+        }
+    }
+}
+
+#toolT {
+    visibility: hidden !important;
+}
+
+.recentBuffer {
+    margin-left: 10px;
+    margin-right: 10px;
 }

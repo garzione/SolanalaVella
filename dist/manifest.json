@@ -1,7 +1,7 @@
 {
-    "name": "Simple Toggle Sites",
+    "name": "Solana la Vella",
     "version": "1.0.0",
-    "description": "A very basic extension to quickly block or allow a list of websites.",
+    "description": "A crypto wallet for Solana.",
     "permissions": [
         "storage",
         "webRequest",
@@ -19,7 +19,7 @@
     },
     "browser_action": {
         "default_popup": "popup.html",
-        "default_icon": "images/icon-48x48-off.png"
+        "default_icon": "images/icon-16x16.png"
     },
     "manifest_version": 2
 }
